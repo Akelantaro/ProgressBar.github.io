@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="Index.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="progress_bar">
+            <p>Progress bar</p>
+            <div class="progress_bar_content">
+                <svg>
+                    <circle class="ring" r="45" cx="50" cy="50" />
+                </svg>
+                <div class="progress_bar_content_switches">
+                    <div class="progress_bar_content_switches_normal">
+                        <input type="number" onchange="Number()" id="number"><p>Value</p>
+                    </div>
+                    <div class="progress_bar_content_switches_animated">
+                        <input type="checkbox" onchange="Animated()" id="Animated"><p>Animated</p>
+                    </div>
+                    <div class="progress_bar_content_switches_hidden">
+                        <input type="checkbox" onchange="Hidden()" class="Hidden"><p>Hidden</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress_bar_content_switches_hidden clone">
+            <input type="checkbox" onchange="HiddenClone()" class="Hidden"><p>Hidden</p>
+        </div>
+    </body>
+</html>
