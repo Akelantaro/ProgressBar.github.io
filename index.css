@@ -71,6 +71,8 @@ label{
     display: inline-block;
     height: 28px;
     user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 label span{
     display: inline-block;
