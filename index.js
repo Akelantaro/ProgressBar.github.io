@@ -59,6 +59,10 @@ function checkBoxAnimated(){
 }
 
 function checkBoxHidden(){
+    cloneBox.style.transitionDuration = 0;
+    cloneAmendment();
+    cloneBox.style.transitionDuration = 0.3;
+    
     for (let i=0;i<=2;i++){
         contentInputs[i].disabled = true;
     }
@@ -148,7 +152,7 @@ function hiddenCloneReturn(){
                         contentInputs[i].disabled = false;
                     }
                     HiddenAnimation = true;
-                    
+
                 return;
                 }
             },10)
