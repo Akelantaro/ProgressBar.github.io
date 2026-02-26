@@ -81,7 +81,7 @@ label span{
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 25%/50%;	
     background: #eee;
-    transition: .2s;
+    transition: 1s;
     position: relative;
 }
 label span:before {
@@ -95,7 +95,7 @@ label span:before {
     border-radius: 50%;
     background: #eee;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-	transition: 5.5s;
+	transition: 1s;
 }
 label input[type=checkbox]{
     display: block;	
