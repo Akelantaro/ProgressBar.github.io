@@ -1,30 +1,43 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width initial-scale=1">
         <script src="index.js"></script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="progress_bar">
-            <p>Progress bar</p>
+            <p>Progress</p>
             <div class="progress_bar_content">
                 <svg>
-                    <circle class="ring" r="80" cx="100" cy="100" />
+                    <circle class="ring" r="60" cx="100" cy="100" />
                 </svg>
                 <div class="progress_bar_content_switches">
                     <div class="progress_bar_content_switches_normal">
-                        <input type="number" onchange="checkBoxNumber()" id="number"><p>Value</p>
+                        <input type="number" onchange="checkBoxNumber()" id="number" class="ops"><p>Value</p>
                     </div>
                     <div class="progress_bar_content_switches_animated">
-                        <input type="checkbox" onchange="Animated()" id="Animated"><p>Animated</p>
+                        <label>
+                            <input type="checkbox" onchange="Animated()" id="Animated">
+                            <span></span>
+                        </label>
+                        <p>Animated</p>
                     </div>
                     <div class="progress_bar_content_switches_hidden">
-                        <input type="checkbox" onchange="Hidden()" class="Hidden"><p>Hidden</p>
+                        <label>
+                            <input type="checkbox" onchange="Hidden()" class="Hidden">
+                            <span></span>
+                        </label>
+                        <p>Hidden</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="progress_bar_content_switches_hidden clone">
-            <input type="checkbox" onchange="HiddenClone()" class="Hidden"><p>Hidden</p>
+            <label>
+                <input type="checkbox" onchange="HiddenClone()" class="Hidden" disabled>
+                <span></span>
+            </label>
+            <p>Hidden</p>
         </div>
     </body>
 </html>
