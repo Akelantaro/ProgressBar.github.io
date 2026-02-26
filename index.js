@@ -143,11 +143,13 @@ function progressBarRotation(value){
         link.flexDirection = "column";
         link2.maxWidth = 300;
         link2.maxHeight = 600;
+        link2.marginTop = 50;
     }
     else {
         link.flexDirection = "row";
         link2.maxWidth = 500;
         link2.maxHeight = 300;
+        link2.marginTop = 20;
     }
     Clone();
 }

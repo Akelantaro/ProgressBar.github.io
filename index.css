@@ -52,6 +52,7 @@ svg{
 .ring{
   fill: none;
   stroke: rgb(0, 92, 254);
+  stroke: aqua;
   stroke-width: 15px;
   transform-origin: center;
   transform: rotate(270deg);
