@@ -8,6 +8,31 @@ function checkBoxNumber(){
     if (s.value>=100){s.value = 100;result++};
     ring.style.strokeDasharray = result + ',' + strokeLength;
 }
+
+function Povorot(){
+    let check = document.getElementById("Animated");
+    let start = Date.now();
+        let ring = document.querySelector('.ring');
+        let trans = ring.style.transform;
+        let b = -90;
+        let deg = "";
+        if (trans.length != 0){
+            let i=7;
+            while (trans[i]!="d" && i <100){
+                deg+=trans[i];
+                i++;
+            }
+            b = parseInt(deg);
+        }
+        let timer = setInterval(function(){
+            let a = -(((start - Date.now())/7-b)%360);
+            ring.style.transform = `rotate(${a}deg)`;
+            if  (!check.checked){
+                clearInterval(timer);
+                return;
+            }
+        },10)
+}
 function Animated(){
     let check = document.getElementById("Animated");
     if (check.checked){
@@ -33,7 +58,6 @@ function Animated(){
             }
         },10)
     }
-    Clone();
 }
 function Hidden(){
     document.querySelector(".progress_bar_content_switches_hidden input").disabled = true;
@@ -149,9 +173,5 @@ function progressBarRotation(value){
         link2.marginTop = 20;
     }
     Clone();
-    let rotation = ring.style.transform;
-    ring.style.transform = `rotate(${1}deg)`;
-    console.log(ring.style.transform);
-    ring.style.transform = rotation;
-    console.log(ring.style.transform);
+    Povorot();
 }
